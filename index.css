@@ -38,6 +38,14 @@
     font-size: 17px;
     margin-left: 20px;
     margin-bottom: 15px;
+
+    transition: width 2s, height 2s;
+    transition-timing-function: ease;
+}
+
+.sidebar-item:hover{
+    scale: 1.1;
+    cursor: pointer;
 }
 
 .sidebar-item>p {
@@ -47,17 +55,17 @@
 
 .main {
     height: 100vh;
-    width: 80vw;
+    width: 100vw;
     overflow-x: none;
     overflow-y: flex;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
 }
 
 #brand-logo {
-    width: 10vw;
+    width: 12vw;
     max-width: 500px;
     padding: 5px;
     margin: 10px 5px 30px 5px;
@@ -100,10 +108,11 @@
     white-space: nowrap;
     width: 100%;
     box-sizing: border-box;
+    padding-top: 10px;
 }
 
 .stories.stories::-webkit-scrollbar {
-    display: none;
+    display:none;
 }
 
 .story {
@@ -136,7 +145,7 @@
 .next-arrow {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 20px;
     padding: 8px;
     background-color: white;
     color: black;
@@ -165,13 +174,23 @@
     justify-content: space-between;
 }
 
+.icon-area > i, span > i{
+    font-size: 20px;
+    transition: width 2s, height 2s;
+    transition-timing-function: ease;
+}
+
+.icon-area > i:hover, span > i:hover{
+    scale: 1.2;
+}
+
 .caption-area,
 .comment-area {
     padding: 10px;
 }
 
-.coment>i {
-    font-size: 10px;
+.coment>i, .add-coment >i {
+    font-size: 20px;
 }
 
 .add-coment {
@@ -180,7 +199,9 @@
     font-size: 20px;
     color: #888888;
     padding: 10px;
-    margin-bottom: 5px;
+    margin: 10px;
+    border:1px #888888 solid;
+    border-radius: 10px 10px;
 }
 
 .top-bar,
@@ -261,7 +282,7 @@
         padding-top: 75px;
     }
 
-    .card:nth-child(4) {
+    .card:nth-child(5) {
         padding-bottom: 50px;
     }
 
