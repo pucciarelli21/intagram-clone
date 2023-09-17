@@ -209,6 +209,46 @@
     display: none;
 }
 
+#showClick{
+    display: none;
+}
+
+#click {
+    font-weight: 600;
+    color: #888888;
+    cursor: pointer;
+}
+
+#showClick2{
+    display: none;
+}
+
+#click2 {
+    font-weight: 600;
+    color: #888888;
+    cursor: pointer;
+}
+
+#showClick3{
+    display: none;
+}
+
+#click3 {
+    font-weight: 600;
+    color: #888888;
+    cursor: pointer;
+}
+
+#showClick4{
+    display: none;
+}
+
+#click4 {
+    font-weight: 600;
+    color: #888888;
+    cursor: pointer;
+}
+
 @media screen and (max-width:480px) {
 
     .sidebar {
