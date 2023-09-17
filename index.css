@@ -1,0 +1,249 @@
+@import url('https://fonts.cdnfonts.com/css/instagram-sans-script');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#brand-logo-2 {
+    display: none;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20vw;
+    height: 100vh;
+    overflow: none;
+    position: fixed;
+    border-right: 0.5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.sidebar-item>p {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.main {
+    height: 100vh;
+    width: 80vw;
+    overflow-x: none;
+    overflow-y: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#brand-logo {
+    width: 10vw;
+    max-width: 500px;
+    padding: 5px;
+    margin: 10px 5px 30px 5px;
+    box-sizing: border-box;
+}
+
+.fa-solid {
+    padding: 5px;
+}
+
+.profile-img {
+    margin: 10px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.card {
+    position: relative;
+    height: auto;
+    width: 450px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.publicatiton {
+    box-shadow: 0px 0px 3px 1px #888888;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+}
+
+.stories {
+    overflow-x: scroll;
+    overflow-y: none;
+    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.stories.stories::-webkit-scrollbar {
+    display: none;
+}
+
+.story {
+    display: inline-block;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.story>p {
+    font-size: 12px;
+}
+
+.story>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.next-arrow {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    opacity: 0.8;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.handle-name {
+    display: flex;
+    align-items: center;
+}
+
+.icon-area,
+.coment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caption-area,
+.comment-area {
+    padding: 10px;
+}
+
+.coment>i {
+    font-size: 10px;
+}
+
+.add-coment {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #888888;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.top-bar,
+.bottom-bar {
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        width: 100vw;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        width: 90vw;
+    }
+
+    .top-bar {
+        width: 100%;
+        top: 0;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 1;
+        align-items: center;
+        background-color: white;
+        border-bottom: 1px solid black;
+
+    }
+
+    .top-bar>div {
+        padding-right: 10px;
+    }
+
+    .top-bar>div>i {
+        font-size: 25px;
+    }
+
+    .bottom-bar {
+        width: 100%;
+        display: block;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+        background-color: white;
+        border-top: 1px solid black;
+    }
+
+
+    #brand-logo {
+        width: 20vh;
+        margin: 0;
+        padding-left: 5px;
+    }
+
+    .bottom-bar {
+        padding: 10px;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+
+    .bottom-bar>i {
+        font-size: 25px;
+    }
+
+    .stories {
+        width: 95vw;
+        padding-top: 75px;
+    }
+
+    .card:nth-child(4) {
+        padding-bottom: 50px;
+    }
+
+}
